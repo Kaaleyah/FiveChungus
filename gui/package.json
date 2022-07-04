@@ -1,0 +1,23 @@
+{
+  "name": "Five Chungus",
+  "version": "1.0.0",
+  "description": "FiveChungus is a peer-to-peer .png file sharing/distribution application that lets users to share their files via localhost.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "author": "Kaaleyah",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/register": "^7.18.6",
+    "electron": "^19.0.6",
+    "electron-builder": "^23.1.0"
+  },
+  "dependencies": {
+    "python-shell": "^3.0.1",
+    "sweetalert2": "^11.4.19"
+  }
+}

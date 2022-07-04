@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Five Chungus</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbatron">
+        <h1>Five Chungus</h1>
+
+        FiveChungus is a peer-to-peer .png file sharing/distribution application that lets users to share their files via localhost.
+
+        Announce files from "files" folder to share them.
+        Announced files from other devices will be seen with their IPs.
+        If a file is found in a available device, download it by writing their name.
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">        
+        <div class="col">
+          <h3>Announce</h3>
+          
+          <label>Specify the file name.</label>
+          <br>
+          <input type="text" placeholder="sample.png" id="toBeAnnounced" class="form-control in">
+          <br>
+          <div class="col">
+            <button class="btn btn-danger" onclick="announce()">Announce</button>
+          </div>
+          <br>
+          <ul id="announceConsole">
+
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3>Discover</h3>
+
+          <div id="discoverConsole">
+            <p></p>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <h3>Download</h3>
+
+          <label>What do you want to download?</label>
+          <br>
+          <input type="text" placeholder="sample.png" id="toDownload" class="form-control in">
+          <br>
+
+          <button class="btn btn-danger" onclick="download()">Download</button>
+          <p id="downloadConsole"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    
+
+    <!-- You can also require other files to run in this process -->
+    <script src="linkers/announce.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

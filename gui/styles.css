@@ -1,0 +1,14 @@
+/* styles.css */
+body {
+    background-color: #FFDEDE;
+}
+
+.in {
+    background-color: #FBA1A1;
+}
+
+#discoverConsole p {
+    font-size: 0.8rem;
+}
+
+/* Add styles here to customize the appearance of your app */
