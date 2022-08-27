@@ -2,10 +2,10 @@
 
 FiveChungus is a peer-to-peer file sharing/distribution application that lets users to share their files via localhost.
 
-This was a school project from Bahcesehir University, Networks lecture. Main program is written in Python, UI is added via Electron.js
+This was a school project from Bahcesehir University, Introduction to Computer Networks course. Main program is written in Python, UI is added via Electron.js
 
 ## Requirements
-- Node JS
+- Node.js
 - Python
 
 
